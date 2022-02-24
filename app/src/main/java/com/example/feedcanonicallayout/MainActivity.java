@@ -25,16 +25,9 @@ import com.google.android.material.navigationrail.NavigationRailView;
 import java.util.List;
 import java.util.concurrent.Executor;
 
-/** An Activity which hosts the Adaptive feed flow. */
 public class MainActivity extends AppCompatActivity {
 
     private View container;
-    private DrawerLayout drawerLayout;
-    private NavigationView modalNavDrawer;
-    private BottomNavigationView bottomNav;
-    private NavigationRailView navRail;
-    private NavigationView navDrawer;
-    private ExtendedFloatingActionButton navFab;
     private AdaptiveFeedFragment feedFragment;
 
     @Nullable
@@ -50,15 +43,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         container = findViewById(R.id.feed_activity_container);
-        drawerLayout = findViewById(R.id.drawer_layout);
-        modalNavDrawer = findViewById(R.id.modal_nav_drawer);
+        DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
+        NavigationView modalNavDrawer = findViewById(R.id.modal_nav_drawer);
         windowInfoTracker =
                 new WindowInfoTrackerCallbackAdapter(WindowInfoTracker.getOrCreate(this));
         configuration = getResources().getConfiguration();
-        bottomNav = findViewById(R.id.bottom_nav);
-        navRail = findViewById(R.id.nav_rail);
-        navDrawer = findViewById(R.id.nav_drawer);
-        navFab = findViewById(R.id.nav_fab);
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
+        NavigationRailView navRail = findViewById(R.id.nav_rail);
+        NavigationView navDrawer = findViewById(R.id.nav_drawer);
+        ExtendedFloatingActionButton navFab = findViewById(R.id.nav_fab);
 
         feedFragment = new AdaptiveFeedFragment();
 
