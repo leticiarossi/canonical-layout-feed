@@ -1,0 +1,17 @@
+<resources>
+  <string name="app_name">Feed Canonical Layout</string>
+
+  <string name="fab_content_desc">Floating Action Button</string>
+  <string name="fab">Floating action button</string>
+  <string name="nav_fab_text">Compose</string>
+  <string name="nav_button">Expand/contract navigation bar</string>
+
+  <string name="menu_page_1_title">Page 1</string>
+  <string name="menu_page_2_title">Page 2</string>
+  <string name="menu_page_3_title">Page 3</string>
+  <string name="menu_page_4_title">Page 4</string>
+
+  <string name="fragment_title">Title</string>
+  <string name="fragment_subhead">Subhead</string>
+  <string name="sample_image_content_desc">Sample image</string>
+</resources>

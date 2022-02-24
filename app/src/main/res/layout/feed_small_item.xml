@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feed_small_content_container"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginBottom="16dp"
+    app:strokeColor="?attr/colorSurfaceVariant">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/feed_small_content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/feed_small_content_image"
+            android:layout_toLeftOf="@id/feed_small_content_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/fragment_title"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/feed_small_content_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/sample_image_content_desc"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="?attr/shapeAppearanceMediumComponent"
+            android:background="@android:color/white"
+            app:backgroundTint="?attr/colorSurfaceVariant"/>
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
